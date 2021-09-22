@@ -40,7 +40,7 @@ ul {
 }
 
 .label {
-  background-color: black;
+  background-color: #fe4502;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -70,11 +70,11 @@ ul {
 }
 
 .fa-moon-o {
-  color: #f1c40f;
+  color: white;
 }
 
 .fa-sun-o {
-  color: #c59f28;
+  color: white;
 }
 
 .nav-link {

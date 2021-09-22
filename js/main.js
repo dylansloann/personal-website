@@ -14,9 +14,11 @@ function changeItUp() {
   const footer = document.getElementById("footer");
   const footerInfoHeader = document.querySelectorAll(".footer-info-header");
   const footerCopyright = document.getElementById("copyright");
+  const darkModeLabel = document.querySelector(".label");
 
   if (changeSlider.checked) {
     navAndCTABackground.classList.add("woah-dark-background");
+    darkModeLabel.style.backgroundColor = "#18171D";
     landingPageCTA.style.flex = 1;
     ctaName.style.textShadow = "0.03em 0.03em 0 #06001E";
     landingPageOverview.classList.remove("bg-light");
@@ -30,6 +32,7 @@ function changeItUp() {
     localStorage.setItem("woah-dark-checked", "true");
   } else {
     navAndCTABackground.classList.remove("woah-dark-background");
+    darkModeLabel.style.backgroundColor = "#fe4502";
     landingPageCTA.style.flex = 0.7;
     ctaName.style.textShadow = "0.03em 0.03em 0 #0c2936";
     landingPageOverview.classList.add("bg-light");

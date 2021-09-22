@@ -18,12 +18,14 @@ function changeItUp() {
   const footer = document.getElementById("footer");
   const footerInfoHeader = document.querySelectorAll(".footer-info-header");
   const footerCopyright = document.getElementById("copyright");
+  const darkModeLabel = document.querySelector(".label");
 
   if (changeSlider.checked) {
     bgLightBlue.forEach((e) => e.classList.add("bg-dark-purple"));
     navbar.classList.add("navbar-dark");
     navbar.classList.remove("bg-white");
     navbar.classList.add("bg-purple");
+    darkModeLabel.style.backgroundColor = "#18171D";
     pageSection.forEach((e) => (e.style.color = "lightgray"));
     pTags.forEach((e) => (e.style.color = "lightgray"));
     h4Tags.forEach((e) => (e.style.color = "lightgray"));
@@ -41,6 +43,7 @@ function changeItUp() {
     bgLightBlue.forEach((e) => e.classList.remove("bg-dark-purple"));
     navbar.classList.remove("navbar-dark");
     navbar.classList.add("bg-white");
+    darkModeLabel.style.backgroundColor = "#fe4502";
     pageSection.forEach((e) => (e.style.color = "#202020"));
     pTags.forEach((e) => (e.style.color = "#202020"));
     h4Tags.forEach((e) => (e.style.color = "#202020"));
