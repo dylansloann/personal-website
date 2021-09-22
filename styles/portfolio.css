@@ -1,0 +1,72 @@
+#gesture-project-logo {
+  width: 50%;
+  padding-right: 5%;
+}
+
+#dynata-project {
+  color: black;
+}
+
+#dynata-project-logo {
+  padding-left: 5%;
+  width: 55%;
+}
+
+#orion-project-logo {
+  width: 50%;
+  padding-right: 5%;
+}
+
+.project-text {
+  display: block;
+}
+
+.project-body span {
+  font-weight: 700;
+}
+
+.carousel {
+  margin-top: 5%;
+  width: 50%;
+  border: 3px #202020 double;
+}
+
+#dynata-carousel {
+  width: 90%;
+}
+
+.carousel-control-prev {
+  filter: invert();
+}
+
+.carousel-control-next {
+  filter: invert();
+}
+
+@media only screen and (max-width: 768px) {
+  #dynata-project-logo {
+    padding-left: 0;
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  #gesture-project-logo {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 10%;
+  }
+
+  #orion-project-logo {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 10%;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  #dynata-carousel {
+    width: 100%;
+  }
+}

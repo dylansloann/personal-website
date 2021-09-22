@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dylan Sloan</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css" />
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/flame.css" />
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body class="bg-white">
+    <div class="nav-and-cta">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="switch-container">
+            <input type="checkbox" class="checkbox" id="woah-dark-switch" onclick="changeItUp()" />
+            <label class="label" for="woah-dark-switch">
+              <i class="fa fa-moon-o"></i>
+              <i class="fa fa-sun-o"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="pages/portfolio.html">Portfolio</a>
+              <a class="nav-link" href="pages/qualifications.html">Qualifications</a>
+              <a class="nav-link" href="pages/service.html">Service</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section id="landing-page-cta">
+        <div class="cta-heading">
+          <p data-aos="fade-down-right" class="cta-intro">howdy, my name is</p>
+          <h1 data-shadow="dylan sloan" data-aos="zoom-in" class="cta-name">dylan sloan</h1>
+          <p data-aos="fade-up-right" class="cta-body">
+            Texas A&M Computer Science student looking to pursue a career in full-stack web development.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section class="bg-dark-purple bg-light" id="landing-page-overview">
+      <div data-aos-once="true" data-aos="fade-right" class="overview-text">
+        <h1 class="overview-header">Personal Overview</h1>
+        <p class="overview-body">
+          Hi, I would like to begin by thanking you for taking the time to visit my website. I know there are countless
+          links floating around that you could have searched or navigated to, so it means a lot that you ended up on
+          mine. While exploring the different sections, I hope you enjoy the content you find and get the chance to
+          learn more about me from a personal and development stance. Providing a quick overview, I am currently a
+          Computer Science major residing in College Station, TX attending Texas A&M University. I have been in software
+          development for a few years now and have gotten to experience a wide breadth of technologies. Software
+          development has provided me with a great merger between enjoyment and professionalism. I never thought that I
+          would be able to appreciate the work I do in both academia and my personal life as much as I do today. When I
+          was very young I always had a deep interest in technology, whether it was something as simple as a new video
+          game being released or building PCs in middle school. That slowly built up into exploring deeper technology
+          such as Linux and introductory programming. I wasn't exposed to full-scale software development until later in
+          life, but I am immensely happy with how everything has turned out to this point. Going past software
+          development, some of the activities I do day-to-day include biking, graphic design, and music. As much as I do
+          love programming, I believe you have to spread out your experience to become not only become a better
+          developer but develop a better view on life as well. I do not want to dive into too deep details regarding my
+          technical skills or career-oriented goals as I explore these topics in my other sections. Please feel free to
+          explore through the pages and contact me if you have any questions.
+        </p>
+      </div>
+      <img data-aos-once="true" data-aos="fade-up" id="overview-headshot" src="assets/headshot.png" />
+    </section>
+
+    <footer class="bg-white" id="footer">
+      <div class="container py-5">
+        <div class="footer-info-container">
+          <div class="footer-info-box">
+            <div>
+              <p class="text-muted">Feel free to check out any of my social links for more information.</p>
+              <ul class="external-link-list mt-4">
+                <li>
+                  <a href="https://www.linkedin.com/in/dfsloan/"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/dylansloann"><i class="fa fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-info-box">
+            <div>
+              <h6 class="text-bold mb-4 footer-info-header">EXTRA LINKS</h6>
+              <ul>
+                <li class="mb-2"><a href="https://www.tamu.edu/" class="text-muted">Texas A&M University</a></li>
+                <li class="mb-2">
+                  <a href="https://engineering.tamu.edu/cse/academics/peer-teachers/index.html" class="text-muted"
+                    >TAMU Peer Teaching</a
+                  >
+                </li>
+                <li class="mb-2"><a href="https://aggiecodingclub.com/" class="text-muted">Aggie Coding Club</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-info-box">
+            <div>
+              <h6 class="text-bold mb-4 footer-info-header">CONTACT INFO</h6>
+              <ul>
+                <li class="mb-2 text-muted">dylansloann2@gmail.com</li>
+                <li class="mb-2 text-muted">903-780-0178</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-light py-4" id="copyright">
+        <div class="d-flex align-items-center justify-content-center">
+          <p class="text-muted py-2">© 2021 Dylan Sloan All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      window.addEventListener("load", function () {
+        AOS.init({ duration: "1000" });
+      });
+    </script>
+  </body>
+</html>

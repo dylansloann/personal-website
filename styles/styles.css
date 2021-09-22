@@ -1,0 +1,291 @@
+@font-face {
+  font-family: AL_regular;
+  src: url("../assets/AL_regular.otf");
+}
+
+@font-face {
+  font-family: Delirium;
+  src: url("../assets/Delirium.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-and-cta {
+  background-color: black;
+  background-image: url("../assets/background3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  background-color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.1);
+}
+
+.label .ball {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon-o {
+  color: #f1c40f;
+}
+
+.fa-sun-o {
+  color: #c59f28;
+}
+
+.nav-link {
+  font-weight: 400;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#landing-page-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.7;
+  padding: 0 5% 0 5%;
+}
+
+.cta-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 35%;
+  text-align: left;
+}
+
+.cta-intro {
+  font-size: 2.5em;
+  font-family: AL_regular;
+  color: whitesmoke;
+  margin-bottom: -3%;
+  margin-left: 0.5%;
+}
+
+.cta-name {
+  display: inline-block;
+  text-shadow: 0.03em 0.03em 0 #0c2936;
+  color: whitesmoke;
+  font-size: 20em;
+  font-family: Delirium;
+}
+
+.cta-name:after {
+  content: attr(data-shadow);
+  position: absolute;
+  top: 0.045em;
+  left: 0.045em;
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient(
+    45deg,
+    transparent 45%,
+    rgba(235, 233, 224, 0.486) 45%,
+    rgba(235, 233, 224, 0.418) 55%,
+    transparent 0
+  );
+  background-size: 0.05em 0.05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shad-anim 50s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+
+.cta-body {
+  color: whitesmoke;
+  font-size: 1.5em;
+  font-family: AL_regular;
+  width: 55%;
+  margin-top: -6%;
+  margin-left: 0.5%;
+}
+
+#landing-page-overview {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10%;
+}
+
+.overview-text {
+  display: block;
+  padding-right: 5%;
+}
+
+#overview-headshot {
+  width: 35%;
+  border: 3px #202020 double;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #202020;
+  padding: 5% 10% 5% 10%;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-icon {
+  width: 30px;
+}
+
+.no-invert {
+  filter: none;
+}
+
+.footer-info-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.footer-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.external-link-list li {
+  display: inline;
+  margin-right: 8px;
+}
+
+.woah-dark-background {
+  background-image: url("../assets/CTA2.png");
+}
+
+.bg-light-blue {
+  background-color: #e7f1fd;
+}
+
+.bg-pale-blue {
+  background-color: #f6fafc;
+}
+
+.bg-purple {
+  background-color: #211e2c;
+}
+
+.bg-dark-purple {
+  background-color: #16141b;
+}
+
+.bg-alt-purple {
+  background-color: #363246;
+}
+
+.text-dark-grey {
+  color: darkgray;
+  opacity: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 1em;
+  }
+
+  #landing-page-cta {
+    flex: 0.5;
+  }
+
+  .cta-heading {
+    margin-right: 0;
+  }
+
+  .cta-name {
+    font-size: 6em;
+  }
+
+  .cta-intro {
+    font-size: 1.5em;
+  }
+
+  .cta-body {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  #landing-page-overview {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #overview-headshot {
+    width: 300px;
+  }
+
+  .page-section {
+    flex-direction: column;
+  }
+
+  .footer-info-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-info-box {
+    margin-bottom: 30px;
+  }
+}

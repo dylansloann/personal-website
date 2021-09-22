@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dylan Sloan</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../styles/font-awesome/css/font-awesome.min.css" />
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/qualifications.css" />
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body class="bg-white">
+    <div class="nav-and-resume">
+      <nav class="navbar navbar-expand-lg navbar-light bg-pale-blue">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="switch-container">
+            <input type="checkbox" class="checkbox" id="woah-dark-switch" onclick="changeItUp()" />
+            <label class="label" for="woah-dark-switch">
+              <i class="fa fa-moon-o"></i>
+              <i class="fa fa-sun-o"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="../index.html">Home</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link active" href="#">Qualifications</a>
+              <a class="nav-link" href="service.html">Service</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="bg-light-blue" id="resume-section">
+        <embed data-aos="fade-up" src="../assets/resume.pdf" id="resume" />
+        <div data-aos="fade-down" id="resume-text">
+          <h1 id="resume-header">Resume</h1>
+          <p id="resume-body">
+            This is my most current resume and includes many different details relating to my development skillset. In
+            it, you can find my relevant work experience, recent projects, and technical skills. I have listed notable
+            awards that I have received from both high school and college, and also activities and interests that are
+            personal to me. Lastly, you can find information relating to my GPA & other academic-related topics. If my
+            resume has failed to load feel free to click on the icon below to view a copy.
+          </p>
+          <a href="../assets/resume.pdf"><i class="fa fa-external-link fa-lg"></i></a>
+        </div>
+        <img id="astro-with-coffee" src="../assets/astro-with-coffee.png" />
+      </section>
+    </div>
+
+    <section class="page-section bg-pale-blue" id="technical-skills">
+      <div data-aos-once="true" data-aos="fade-right" data-aos-anchor-placement="center-bottom" class="info-container">
+        <h1 class="tech-header mb-4">Technical Skills</h1>
+        <div class="text-body d-flex flex-column flex-lg-row gap-0 gap-lg-5">
+          <div>
+            <h4 class="text-bold">General</h4>
+            <p>
+              Going into deeper detail than what you will find on my resume above. I am very well versed in basic
+              programming knowledge and languages (C++, Python, Java). I currently use many modern tools in my
+              day-to-day development process, examples include git, GitHub, GDB, etc. In a more broad sense, I know of
+              popular industry technologies & methods such as AWS, Test Driven Development, web server communication,
+              and more. I enjoy stepping out of the norm when it comes to a normal development skillset. I love design,
+              a large number of my technological years I have been doing graphics design with Photoshop and other
+              software such as Illustrator. Before I got into software development I was creating logos and mockups for
+              company ideas in my room. it always struck a chord with me on making something that was eye-catching and
+              was something that you wanted to share with others. Tying back to a more computer science sense, I also
+              found an operating system called Linux. When I first deep dove into Linux I was unaware of how deep it
+              would go. You can do so many vast things with just a command line, much less a full-fledged desktop
+              environment. Linux allowed me to express my creativity through the operating system itself, which was an
+              amazing process, both in learning and enjoyment.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-bold">Web Development</h4>
+            <p>
+              I have been recently trying to shape my skillset to more of a web development role. In the world of
+              computer science, just knowing an object-oriented language might not help you specify what you truly want
+              to do. I began by picking up a major frontend library like React and also diving more into how to
+              correlate with a web server and frameworks that come along with that (Node (Javascript), Spring Boot
+              (Groovy, Java), Flask (Python)). During my previous internship with Dynata, I increased my knowledge of
+              web development monumentally. I went into much deeper detail with React and how a web server truly plays
+              its role. I have designed full-fledged APIs hosted within AWS to go along with a UI hosted in Amplify. But
+              of your course, you can't speak of web development and not mention databases. I currently have only
+              explored SQL-related database management systems (MySQL, Postgres, SQLite). I am comfortable navigating
+              through a database and identifying the layout a company and/or project was striving for. I am also fluent
+              in SQL and writing SQL and correlating a DBMS with a backend web server. Also, as mentioned before I have
+              a deep background in UX-related design which has allowed me to create full-stack applications either on my
+              own or within a large-scale company.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img id="planet-clipart" src="../assets/planet.gif" />
+    </section>
+
+    <section class="page-section bg-light-blue" id="technical-interest">
+      <img id="web-dev-clipart" src="../assets/web-dev-clapart.png" />
+      <div data-aos-once="true" data-aos="fade-left" data-aos-anchor-placement="center-bottom" class="info-container">
+        <h1 class="tech-header mb-4">Technical Areas of Interest</h1>
+        <div class="text-body d-flex flex-column flex-lg-row gap-0 gap-lg-5">
+          <div>
+            <h4 class="text-bold">Web Development</h4>
+            <p>
+              As mentioned above my current technical interest lies heavily in web development. Creativity with
+              programming has been something I have been striving for since I began. In certain areas of programming, it
+              is hard to put a unique spin on things when outside restrictions are holding you back, or just the work
+              relies on being done in a specific format. Yes, web development does have restrictions and request
+              depending on if you are doing industry work or in a team, but it has the potential to be a free roam of
+              your creativity. On the other side, backend technologies also provide a strong base in sticking to your
+              fundamentals and providing you with that prime programming experience. Overall, it is an excellent mix of
+              creativity and logical development.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-bold">Operating Systems</h4>
+            <p>
+              Although I love design, low-level code has also caught my interest. It provides a greater sense of control
+              of your program as you tend to know a lot more about your memory management than in web development. That
+              sense of control is a very nice feeling to have when writing code, it adds an extra sense of completeness
+              when finishing a project. As mentioned above, I started to explore Linux early in school. It was also a
+              question of mine why Linux was viewed in this such high spectacle when compared with something Windows,
+              yes windows has an amazing user experience, but Linux gave us the software masterpiece for developers.
+              Situations like these are what still draw me into operating systems and low-level today.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white" id="footer">
+      <div class="container py-5">
+        <div class="footer-info-container">
+          <div class="footer-info-box">
+            <div>
+              <p class="text-muted">Feel free to check out any of my social links for more information.</p>
+              <ul class="external-link-list mt-4">
+                <li>
+                  <a href="https://www.linkedin.com/in/dfsloan/"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/dylansloann"><i class="fa fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-info-box">
+            <div>
+              <h6 class="text-bold mb-4 footer-info-header">EXTRA LINKS</h6>
+              <ul>
+                <li class="mb-2"><a href="https://www.tamu.edu/" class="text-muted">Texas A&M University</a></li>
+                <li class="mb-2">
+                  <a href="https://engineering.tamu.edu/cse/academics/peer-teachers/index.html" class="text-muted"
+                    >TAMU Peer Teaching</a
+                  >
+                </li>
+                <li class="mb-2"><a href="https://aggiecodingclub.com/" class="text-muted">Aggie Coding Club</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-info-box">
+            <div>
+              <h6 class="text-bold mb-4 footer-info-header">CONTACT INFO</h6>
+              <ul>
+                <li class="mb-2 text-muted">dylansloann2@gmail.com</li>
+                <li class="mb-2 text-muted">903-780-0178</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-light py-4" id="copyright">
+        <div class="d-flex align-items-center justify-content-center">
+          <p class="text-muted py-2">© 2021 Dylan Sloan All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Main JS -->
+    <script src="../js/qualifications.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      window.addEventListener("load", function () {
+        AOS.init({ duration: "1000" });
+      });
+    </script>
+  </body>
+</html>
