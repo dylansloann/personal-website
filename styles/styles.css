@@ -211,6 +211,23 @@ ul {
   opacity: 70%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .cta-name {
+    font-size: 6em;
+  }
+
+  .cta-intro {
+    font-size: 1.5em;
+    margin-bottom: 0%;
+  }
+
+  .cta-body {
+    font-size: 1em;
+    width: 75%;
+    margin-top: 0%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   p {
     font-size: 1em;
@@ -230,11 +247,13 @@ ul {
 
   .cta-intro {
     font-size: 1.5em;
+    margin-bottom: 0%;
   }
 
   .cta-body {
     font-size: 1em;
     width: 100%;
+    margin-top: 0%;
   }
 
   #landing-page-overview {
