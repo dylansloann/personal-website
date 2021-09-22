@@ -33,9 +33,9 @@ function changeItUp() {
     dynataProject.classList.add("bg-purple");
     pageSection.forEach((e) => (e.style.color = "lightgrey"));
     carousel.forEach((e) => (e.style.border = "3px lightgrey double"));
-    footer.classList.remove("bg-white");
+    footer.classList.remove("bg-light");
     footer.classList.add("bg-alt-purple");
-    footerCopyright.classList.remove("bg-light");
+    footerCopyright.classList.remove("bg-white");
     footerCopyright.classList.add("bg-purple");
     footerInfoHeader.forEach((e) => e.classList.add("text-white"));
     localStorage.setItem("woah-dark-checked", "true");
@@ -50,8 +50,8 @@ function changeItUp() {
     pageSection.forEach((e) => (e.style.color = "#202020"));
     carousel.forEach((e) => (e.style.border = "3px #202020 double"));
     dynataProject.classList.remove("bg-purple");
-    footer.classList.add("bg-white");
-    footerCopyright.classList.add("bg-light");
+    footer.classList.add("bg-light");
+    footerCopyright.classList.add("bg-white");
     footerInfoHeader.forEach((e) => e.classList.remove("text-white"));
     footerInfoHeader.forEach((e) => e.classList.remove("text-white"));
     footerMutedText.forEach((e) => e.classList.add("text-muted"));

@@ -21,25 +21,25 @@ function changeItUp() {
     darkModeLabel.style.backgroundColor = "#18171D";
     landingPageCTA.style.flex = 1;
     ctaName.style.textShadow = "0.03em 0.03em 0 #06001E";
-    landingPageOverview.classList.remove("bg-light");
+    landingPageOverview.classList.remove("bg-white");
     landingPageOverview.style.color = "lightgrey";
     overviewHeadshot.style.border = "3px lightgrey double";
-    footer.classList.remove("bg-white");
+    footer.classList.remove("bg-light");
     footer.classList.add("bg-alt-purple");
-    footerCopyright.classList.remove("bg-light");
+    footerCopyright.classList.remove("bg-white");
     footerCopyright.classList.add("bg-purple");
     footerInfoHeader.forEach((e) => e.classList.add("text-white"));
     localStorage.setItem("woah-dark-checked", "true");
   } else {
     navAndCTABackground.classList.remove("woah-dark-background");
     darkModeLabel.style.backgroundColor = "#fe4502";
-    landingPageCTA.style.flex = 0.7;
+    landingPageCTA.style.flex = 0.6;
     ctaName.style.textShadow = "0.03em 0.03em 0 #0c2936";
-    landingPageOverview.classList.add("bg-light");
+    landingPageOverview.classList.add("bg-white");
     landingPageOverview.style.color = "#202020";
     overviewHeadshot.style.border = " 3px #202020 double";
-    footer.classList.add("bg-white");
-    footerCopyright.classList.add("bg-light");
+    footer.classList.add("bg-light");
+    footerCopyright.classList.add("bg-white");
     footerInfoHeader.forEach((e) => e.classList.remove("text-white"));
     localStorage.setItem("woah-dark-checked", "false");
   }

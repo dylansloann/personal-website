@@ -33,9 +33,9 @@ function changeItUp() {
     resume.style.border = "4px white dotted";
     technicalSkills.classList.add("bg-purple");
     planetClipart.src = "../assets/planet-red.png";
-    footer.classList.remove("bg-white");
+    footer.classList.remove("bg-light");
     footer.classList.add("bg-alt-purple");
-    footerCopyright.classList.remove("bg-light");
+    footerCopyright.classList.remove("bg-white");
     footerCopyright.classList.add("bg-purple");
     footerInfoHeader.forEach((e) => e.classList.add("text-white"));
     localStorage.setItem("woah-dark-checked", "true");
@@ -51,8 +51,8 @@ function changeItUp() {
     resume.style.border = "4px #202020 dotted";
     technicalSkills.classList.remove("bg-purple");
     planetClipart.src = "../assets/planet.gif";
-    footer.classList.add("bg-white");
-    footerCopyright.classList.add("bg-light");
+    footer.classList.add("bg-light");
+    footerCopyright.classList.add("bg-white");
     footerInfoHeader.forEach((e) => e.classList.remove("text-white"));
     localStorage.setItem("woah-dark-checked", "false");
   }
