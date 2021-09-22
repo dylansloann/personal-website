@@ -114,36 +114,6 @@ ul {
   font-family: Delirium;
 }
 
-.cta-name:after {
-  content: attr(data-shadow);
-  position: absolute;
-  top: 0.045em;
-  left: 0.045em;
-  z-index: -1;
-  text-shadow: none;
-  background-image: linear-gradient(
-    45deg,
-    transparent 45%,
-    rgba(235, 233, 224, 0.486) 45%,
-    rgba(235, 233, 224, 0.418) 55%,
-    transparent 0
-  );
-  background-size: 0.05em 0.05em;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  animation: shad-anim 50s linear infinite;
-}
-
-@keyframes shad-anim {
-  0% {
-    background-position: 0 0;
-  }
-  0% {
-    background-position: 100% -100%;
-  }
-}
-
 .cta-body {
   color: whitesmoke;
   font-size: 1.5em;

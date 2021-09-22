@@ -18,7 +18,7 @@ function changeItUp() {
   if (changeSlider.checked) {
     navAndCTABackground.classList.add("woah-dark-background");
     landingPageCTA.style.flex = 1;
-    ctaName.style.textShadow = "0.03em 0.03em 0 #1c113d";
+    ctaName.style.textShadow = "0.03em 0.03em 0 #06001E";
     landingPageOverview.classList.remove("bg-light");
     landingPageOverview.style.color = "lightgrey";
     overviewHeadshot.style.border = "3px lightgrey double";
