@@ -20,7 +20,7 @@ function changeItUp() {
     navAndCTABackground.classList.add("woah-dark-background");
     darkModeLabel.style.backgroundColor = "#18171D";
     landingPageCTA.style.flex = 1;
-    ctaName.style.textShadow = "0.03em 0.03em 0 #06001E";
+    ctaName.style.textShadow = "0.025em 0.025em 0 #06001E";
     landingPageOverview.classList.remove("bg-white");
     landingPageOverview.style.color = "lightgrey";
     overviewHeadshot.style.border = "3px lightgrey double";
@@ -34,7 +34,7 @@ function changeItUp() {
     navAndCTABackground.classList.remove("woah-dark-background");
     darkModeLabel.style.backgroundColor = "#fe4502";
     landingPageCTA.style.flex = 0.6;
-    ctaName.style.textShadow = "0.03em 0.03em 0 #0c2936";
+    ctaName.style.textShadow = "0.025em 0.025em 0 #0B3346";
     landingPageOverview.classList.add("bg-white");
     landingPageOverview.style.color = "#202020";
     overviewHeadshot.style.border = " 3px #202020 double";
